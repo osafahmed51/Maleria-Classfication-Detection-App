@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499322112891",
+    "project_id": "malaria-detection-7023b",
+    "storage_bucket": "malaria-detection-7023b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499322112891:android:51958bcbcebbea8fd80bde",
+        "android_client_info": {
+          "package_name": "com.example.maleriadetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499322112891-16jr33q2f07s04el211pjdinru0ad6fi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC925mQubr5h7ff5qcuQTGnN5Ke4t3y0LY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499322112891-16jr33q2f07s04el211pjdinru0ad6fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

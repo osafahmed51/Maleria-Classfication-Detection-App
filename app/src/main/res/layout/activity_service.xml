@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunonthehorizon"
+    tools:context=".RecyclerClass.ServiceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:text="Services"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/robotobold"
+            android:layout_margin="12dp"
+            android:textAllCaps="true"
+            android:letterSpacing="0.5"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/top"
+        android:background="@drawable/backcard">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/servicerecycler"/>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

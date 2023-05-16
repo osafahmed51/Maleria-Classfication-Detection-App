@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunonthehorizon"
+    tools:context=".Treatment.TreatmentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/topheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Treatments and Medicines"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/mosqGif"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/topheading"
+                android:src="@drawable/giphy" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/mosqGif"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/backcard">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="Malaria is a serious and potentially life-threatening disease caused by a parasite called Plasmodium, which is transmitted through the bite of infected mosquitoes. The treatment of malaria typically involves the use of antimalarial medications, which can help to clear the infection from the body.\n\nThe specific treatment regimen for malaria may vary depending on the severity of the disease, the type of malaria parasite involved, the age and overall health of the patient, and other factors. However, some common treatment activities and medicines for malaria include:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:layout_marginLeft="10dp"
+                    android:text="Treatments:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/treatment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heading"
+                    android:layout_marginBottom="8dp"
+                    android:background="#72FFEB3B"
+                    android:drawableRight="@drawable/baseline_touch_app_24"
+                    android:paddingLeft="10dp"
+                    android:text="Antimalarial medications"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/treatonelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatment1"
+
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/teartoneimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/meds" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teartoneimg"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="The most common antimalarial drugs used to treat malaria include chloroquine, artemisinin-based combination therapies (ACTs), and quinine. These medications work by targeting the malaria parasite in different ways, such as disrupting its ability to replicate or killing it outright."
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/treatment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatonelay"
+                    android:layout_marginBottom="8dp"
+                    android:background="#72FFEB3B"
+                    android:drawableRight="@drawable/baseline_touch_app_24"
+                    android:paddingLeft="10dp"
+                    android:text="Supportive care"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/treattwolay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatment2"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/tearttwoimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/treattwo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tearttwoimg"
+                        android:layout_margin="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="In addition to antimalarial medications, patients with malaria may require supportive care to help manage their symptoms and prevent complications. This may include measures such as rest, fluids to prevent dehydration, and treatment of fever with antipyretics like acetaminophen"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/treatment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treattwolay"
+                    android:layout_marginBottom="8dp"
+                    android:background="#72FFEB3B"
+                    android:drawableRight="@drawable/baseline_touch_app_24"
+                    android:paddingLeft="10dp"
+                    android:text="Prevention of complications"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/treatthreelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatment3"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/teartthreeimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/treatthree" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teartthreeimg"
+                        android:layout_margin="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="In addition to antimalarial medications, patients with malaria may require supportive care to help manage their symptoms and prevent complications. This may include measures such as rest, fluids to prevent dehydration, and treatment of fever with antipyretics like acetaminophen"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/treatment4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatthreelay"
+                    android:layout_marginBottom="8dp"
+                    android:background="#72FFEB3B"
+                    android:drawableRight="@drawable/baseline_touch_app_24"
+                    android:paddingLeft="10dp"
+                    android:text="Vector control"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/treatfourlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatment4"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/teartfourimg"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/treatfour" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teartfourimg"
+                        android:layout_margin="10dp"
+                        android:justificationMode="inter_word"
+                        android:text="In addition to antimalarial medications, patients with malaria may require supportive care to help manage their symptoms and prevent complications. This may include measures such as rest, fluids to prevent dehydration, and treatment of fever with antipyretics like acetaminophen"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/medsheading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/treatfourlay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Medicines"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/medname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medsheading"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="1. Atovaquone/Proguanil (Malarone)\n2.Chloroquine.\n3.Doxycycline.\n4.Mefloquine.\n5.Primaquine.\n6.Tafenoquine (ArakodaTM)"
+                    android:textColor="@color/black" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/medname"
+                    tools:ignore="NotSibling">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
